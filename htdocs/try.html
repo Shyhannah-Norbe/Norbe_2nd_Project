@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0;
+				display: flex;
+				min-height: 100vh;
+				justify-content: center;
+				align-items: center;
+				background-color: #f8f8f8;
+			.goback a {
+				color: #000000;
+				text-decoration: none;
+				margin: 10px;
+			}
+			.goback a:hover {
+				color: blue;
+			}
+			#editor-container {
+				width: 70%;
+				max-width: 800px;
+				margin: auto;
+			}
+			#code-input {
+				width: 100%;
+				height: 200px;
+				font-family: monospace;
+			}
+			#run-button {
+				margin-top: 10px;
+				padding: 8px 16px;
+				background-color: #000;
+				color: #fff;
+	            cursor: pointer;
+				border: none;
+				border-radius: 4px;
+			}
+			#result-container {
+				width: 100%;
+				height: 400px;
+				margin-top: 20px;
+				border: 1px solid #ccc;
+			}
+		</style>
+	</head>
+	<body>
+    		<div class="goback">
+           	        <a href="HTML Style.html"> Go Back </a>          
+            </div>
+			<div id="editor-container">
+				<textarea id="code-input" placeholder="Enter your HTML code here..."></textarea>
+				<button id="run-button" onclick="runCode()">Run Code</button>
+				<iframe id="result-container" sandbox="allow-scripts allow-same-origin"></iframe>
+			</div>
+			<script>
+				const initialCode = '<p>I am normal</p>\n<p style="color:pink;">I am pink</p>\n<p style="font-size:60px;">I am huge</p>';
+					document.getElementById('code-input').value = initialCode;
+				function runCode() {
+					const codeInput = document.getElementById('code-input').value;
+					const resultContainer = document.getElementById('result-container');
+					resultContainer.srcdoc = codeInput;
+				}
+			</script>
+	</body>
+</html>
