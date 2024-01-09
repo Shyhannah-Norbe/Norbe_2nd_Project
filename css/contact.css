@@ -1,0 +1,167 @@
+body{
+	margin: 0;
+}
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.logo {
+	background-color: #ffffff;
+	width: 100%;
+}
+.logo img {
+	width: 15%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 10px;
+}
+.container {
+	background-color: #808080;
+  	width: 100%;
+	padding: 1px;
+}
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul button{
+	background: none;
+	border: 0;
+}
+.nav a {
+	color: #000000;
+	text-decoration: none;
+}
+.nav a:link {
+	color: #000000;
+}
+.nav a:active {
+	color: #6c5673;
+}
+.nav a:hover {
+	color: #ffffff;
+}
+.nav a:visited {
+	color: #334c6b;
+}
+.content ul {
+    list-style-type: none;
+}
+.content a {
+	text-decoration: none;
+	color: #000000;
+}
+.soc-med {
+    align-items: center;
+    display: inline-block;
+}
+#contact {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/icon.png');
+    background-position: 0 -100px;
+}
+.soc-med li:nth-child(1){
+	position: relative;
+	transform: translate(35%,130%);
+}
+#FB {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/icon.png');
+    background-position: -100px -100px;
+}
+.FB {
+    width: 100px;
+    height: 100px;
+}
+#FB1 {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/Icon1.png');
+    background-position: -20px -20px;
+}
+.FB1 {
+    width: 20px;
+    height: 20px;
+}
+.soc-med li:nth-child(2){
+	position: relative;
+	transform: translate(35%,176%);
+}
+#IG {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/icon.png');
+    background-position: -200px -100px;
+}
+.IG {
+    width: 100px;
+    height: 100px;
+}
+#IG1 {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/Icon1.png');
+    background-position: -40px -20px;
+}
+.IG1 {
+    width: 20px;
+    height: 20px;
+}
+.soc-med li:nth-child(3){
+	position: relative;
+	transform: translate(35%,210%);
+}
+.text {
+    width: 50%;
+	transform: translate(-15%,0%);	 
+}
+.header h1{
+	text-align: center;
+	position: relative;
+	transform: translate(0%,-850%);
+}
+.form-container {
+    background-color: #808080;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+	width: 40%;
+	position: relative;
+	transform: translate(110%,-75%)
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+label {
+    margin-bottom: 8px;
+}
+.form-container input{
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.submit {
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+}

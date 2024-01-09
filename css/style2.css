@@ -1,0 +1,110 @@
+body{
+	margin: 0;
+}
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.logo {
+	background-color: #ffffff;
+	width: 100%;
+}
+.logo img {
+	width: 15%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 1%;
+}
+.container {
+	background-color: #808080;
+  	width: 100%;
+	padding: 1px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul button{
+	background: none;
+	padding-right: 10px;
+	border: 0;
+}
+.nav a:link {
+	color: #000000;
+	text-decoration: none;
+}
+.nav a:active {
+	color: #6c5673;
+}
+.nav a:hover {
+	color: #ffffff;
+}
+.nav a:visited {
+	color: #334c6b;
+}
+.vid {
+	width: 50%;
+	height: 50%;
+    transform: translate(50%,115%);
+}
+.def {
+	margin: 0 auto;
+	text-align: center;
+	width: 55%;
+	padding-top: 12%;
+    transform: translate(0%,-90%);
+}
+.example {
+    transform: translate(46.5%,30%);
+	background-color: #808080;
+	padding: 1%;
+	width: 50%;
+	text-align: center;
+}
+.example img {
+	width: 95%;
+}
+.example p {
+	background-color: #ffffff;
+	padding: 1px;
+}
+.example a {
+	text-decoration: none;
+	background-color: #ffffff;
+	padding: 5px;
+	border-radius: 5px;
+	color: #000000;
+}
+.example a:active {
+	color: #6c5673;
+}
+.example a:hover {
+	color: #808080;
+}
+.example a:visited{
+	color: #334c6b;
+}
+#FB1 {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/Icon1.png');
+    background-position: -20px -20px;
+}
+.FB1 {
+    width: 20px;
+    height: 20px;
+}
+#IG1 {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/Icon1.png');
+    background-position: -40px -20px;
+}
+.IG1 {
+    width: 20px;
+    height: 20px;
+}
